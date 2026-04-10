@@ -1,0 +1,57 @@
+{
+    "model_settings": {
+        "model_name": "gpt-3.5-turbo",
+        "api_key": "",
+        "provider": "openai",
+        "reasoning_effort": "minimal",
+        "verbosity": "low",
+        "temperature": 0.7,
+        "max_new_tokens": 2000
+    },
+    
+    "experiment_settings": {
+        "output_dir": "Re_BFI/results",
+        "log_level": "INFO"
+    },
+    
+    "re_bfi_settings": {
+        "first_bfi_iterations": 0,
+        "second_bfi_iterations": 5,
+        "total_experiments": 3,
+        "bfi_mode": "numbers_and_language",
+        
+        "use_existing_scores": true,
+        "existing_scores_source": [
+            {
+                "openness": 3.5,
+                "conscientiousness": 4.2,
+                "extraversion": 2.8,
+                "agreeableness": 4.0,
+                "neuroticism": 3.1
+            },
+            {
+                "openness": 4.0,
+                "conscientiousness": 3.8,
+                "extraversion": 3.5,
+                "agreeableness": 3.7,
+                "neuroticism": 2.9
+            },
+            {
+                "openness": 2.9,
+                "conscientiousness": 3.5,
+                "extraversion": 4.2,
+                "agreeableness": 3.9,
+                "neuroticism": 3.3
+            }
+        ]
+    },
+    
+    "analysis_settings": {
+        "calculate_correlation": true,
+        "calculate_mean_absolute_error": true,
+        "save_detailed_results": true,
+        "generate_plots": true
+    },
+    
+    "_note": "この例では、設定ファイル内に直接3つのBFIスコアを記述しています。total_experiments=3なので、これら3つのスコアを使って実験が実行されます。"
+}

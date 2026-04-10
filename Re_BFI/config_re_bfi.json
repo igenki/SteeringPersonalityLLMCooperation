@@ -1,0 +1,33 @@
+{
+    "model_settings": {
+        "model_name": "gpt-3.5-turbo",
+        "api_key": "",
+        "provider": "openai",
+        "reasoning_effort": "minimal",
+        "verbosity": "low",
+        "temperature": 0.7,
+        "max_new_tokens": 2000
+    },
+    
+    "experiment_settings": {
+        "output_dir": "Re_BFI/results",
+        "log_level": "INFO"
+    },
+    
+    "re_bfi_settings": {
+        "first_bfi_iterations": 5,
+        "second_bfi_iterations": 5,
+        "total_experiments": 10,
+        "bfi_mode": "numbers_and_language",
+        
+        "use_existing_scores": false,
+        "existing_scores_source": null
+    },
+    
+    "analysis_settings": {
+        "calculate_correlation": true,
+        "calculate_mean_absolute_error": true,
+        "save_detailed_results": true,
+        "generate_plots": true
+    }
+}

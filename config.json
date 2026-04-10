@@ -1,0 +1,38 @@
+{
+    "model_settings": {
+        "model_name": "gpt-3.5-turbo",
+        "api_key": "",
+        "provider": "openai",
+        "reasoning_effort": "minimal",
+        "verbosity": "low",
+        "temperature": 0.7,
+        "max_new_tokens": 200
+    },
+    
+    "experiment_settings": {
+        "output_dir": "data",
+        "log_level": "INFO",
+        "enable_interactive_selection": false
+    },
+    
+    "bfi_settings": {
+        "iterations": 5,
+        "modes": ["numbers_and_language", "no_prompt"]
+    },
+    
+    "pd_game_settings": {
+        "iterations": 10,
+        "repetitions": 20,
+        "prompt_templates": ["competitive"],
+        "collect_reasoning": true
+    },
+    
+    "strategy_settings": {
+        "strategies": ["ALLC", "ALLD", "RANDOM", "GRIM", "TFT"]
+    },
+    
+    "personality_modification_settings": {
+        "target_traits": ["extraversion", "agreeableness", "conscientiousness", "neuroticism", "openness"],
+        "forced_scores": [1, 5]
+    }
+}

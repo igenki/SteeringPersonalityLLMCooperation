@@ -1,0 +1,47 @@
+{
+    "model_settings": {
+        "model_name": "gpt-3.5-turbo",
+        "api_key": "",
+        "provider": "openai",
+        "reasoning_effort": "minimal",
+        "verbosity": "low",
+        "temperature": 0.7,
+        "max_new_tokens": 2000
+    },
+    
+    "experiment_settings": {
+        "output_dir": "Re_BFI/results",
+        "log_level": "INFO"
+    },
+    
+    "re_bfi_settings": {
+        "first_bfi_iterations": 0,
+        "second_bfi_iterations": 5,
+        "total_experiments": 10,
+        "bfi_mode": "numbers_and_language",
+        
+        "use_existing_scores": true,
+        "existing_scores_source": "results/YYYYMMDD_HHMMSS_BFI5_PDI10_PDR10_Mgpt35turbo/control_BFI.json"
+    },
+    
+    "analysis_settings": {
+        "calculate_correlation": true,
+        "calculate_mean_absolute_error": true,
+        "save_detailed_results": true,
+        "generate_plots": true
+    },
+    
+    "_comments": {
+        "use_existing_scores": "既存のBFIスコアを使用する場合は true に設定",
+        "existing_scores_source_options": [
+            "1. ファイルパス（文字列）: 'results/.../control_BFI.json'",
+            "2. スコアのリスト（配列）: [{'openness': 3.5, ...}, {'openness': 4.0, ...}]"
+        ],
+        "supported_file_formats": [
+            "control_BFI.json (既存実験の初回BFI結果)",
+            "final_results.json (Re_BFI実験の結果)",
+            "直接スコア形式の JSON"
+        ],
+        "note": "既存スコアを使用する場合、first_bfi_iterations は無視されます"
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "model_settings": {
+        "model_name": "gpt-4o",
+        "api_key": "",
+        "provider": "openai",
+        "temperature": 0.7,
+        "max_new_tokens": 2000
+    },
+    
+    "experiment_settings": {
+        "output_dir": "Re_BFI/results",
+        "log_level": "INFO"
+    },
+    
+    "re_bfi_settings": {
+        "first_bfi_iterations": 0,
+        "second_bfi_iterations": 5,
+        "total_experiments": 1,
+        "bfi_mode": "numbers_and_language",
+        
+        "use_existing_scores": true,
+        "existing_scores_source": "results/20260101_094922_BFI20_PDI10_PDR100_Mgpt4o/control_BFI.json"
+    },
+    
+    "analysis_settings": {
+        "calculate_correlation": true,
+        "calculate_mean_absolute_error": true,
+        "save_detailed_results": true,
+        "generate_plots": true
+    },
+    
+    "_description": "GPT-4o用の設定 - 既存実験(20260101)の初回BFIスコアを使用して2回目の測定を5回実施",
+    "_existing_scores_summary": {
+        "openness": 4.68,
+        "conscientiousness": 4.122222222222222,
+        "extraversion": 3.15,
+        "agreeableness": 4.272222222222222,
+        "neuroticism": 1.975
+    }
+}

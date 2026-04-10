@@ -1,0 +1,508 @@
+{
+  "config": {
+    "model_settings": {
+      "model_name": "gpt-5",
+      "api_key": "",
+      "provider": "openai",
+      "temperature": 0.7,
+      "max_new_tokens": 2000
+    },
+    "experiment_settings": {
+      "output_dir": "Re_BFI/results",
+      "log_level": "INFO"
+    },
+    "re_bfi_settings": {
+      "first_bfi_iterations": 0,
+      "second_bfi_iterations": 5,
+      "total_experiments": 1,
+      "bfi_mode": "numbers_and_language",
+      "use_existing_scores": true,
+      "existing_scores_source": "results/20260102_081814_BFI20_PDI10_PDR100_Mgpt5/control_BFI.json"
+    },
+    "analysis_settings": {
+      "calculate_correlation": true,
+      "calculate_mean_absolute_error": true,
+      "save_detailed_results": true,
+      "generate_plots": true
+    },
+    "_description": "GPT-5\u7528\u306e\u8a2d\u5b9a - \u65e2\u5b58\u5b9f\u9a13(20260102)\u306e\u521d\u56deBFI\u30b9\u30b3\u30a2\u3092\u4f7f\u7528\u3057\u30662\u56de\u76ee\u306e\u6e2c\u5b9a\u30925\u56de\u5b9f\u65bd",
+    "_existing_scores_summary": {
+      "openness": 4.6899999999999995,
+      "conscientiousness": 4.688888888888888,
+      "extraversion": 3.10625,
+      "agreeableness": 4.272222222222222,
+      "neuroticism": 2.1125
+    }
+  },
+  "total_experiments": 1,
+  "bfi_mode": "numbers_and_language",
+  "first_bfi_iterations": 0,
+  "second_bfi_iterations": 5,
+  "all_experiment_results": [
+    {
+      "experiment_id": 1,
+      "timestamp": "2026-01-28T10:33:11.608859",
+      "bfi_mode": "numbers_and_language",
+      "first_bfi_iterations": 0,
+      "second_bfi_iterations": 5,
+      "first_bfi_results": {
+        "bfi_scores": null,
+        "iterations": [
+          {
+            "iteration": 1,
+            "trait_averages": {
+              "openness": 4.6899999999999995,
+              "conscientiousness": 4.688888888888888,
+              "extraversion": 3.10625,
+              "agreeableness": 4.272222222222222,
+              "neuroticism": 2.1125
+            }
+          }
+        ],
+        "final_averages": {
+          "openness": 4.6899999999999995,
+          "conscientiousness": 4.688888888888888,
+          "extraversion": 3.10625,
+          "agreeableness": 4.272222222222222,
+          "neuroticism": 2.1125
+        },
+        "total_iterations": 0,
+        "source": "existing_scores"
+      },
+      "second_bfi_results": {
+        "bfi_scores": {
+          "openness": 4.6899999999999995,
+          "conscientiousness": 4.688888888888888,
+          "extraversion": 3.10625,
+          "agreeableness": 4.272222222222222,
+          "neuroticism": 2.1125
+        },
+        "iterations": [
+          {
+            "iteration": 1,
+            "raw_scores": {
+              "openness": [
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                4,
+                5,
+                5,
+                4
+              ],
+              "conscientiousness": [
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                4
+              ],
+              "extraversion": [
+                3,
+                2,
+                3,
+                3,
+                2,
+                3,
+                3,
+                3
+              ],
+              "agreeableness": [
+                4,
+                5,
+                5,
+                4,
+                4,
+                4,
+                5,
+                5,
+                5
+              ],
+              "neuroticism": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ]
+            },
+            "trait_averages": {
+              "openness": 4.8,
+              "conscientiousness": 4.888888888888889,
+              "extraversion": 2.75,
+              "agreeableness": 4.555555555555555,
+              "neuroticism": 2.0
+            }
+          },
+          {
+            "iteration": 2,
+            "raw_scores": {
+              "openness": [
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                4,
+                5,
+                5,
+                4
+              ],
+              "conscientiousness": [
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5
+              ],
+              "extraversion": [
+                3,
+                3,
+                3,
+                3,
+                3,
+                4,
+                3,
+                3
+              ],
+              "agreeableness": [
+                4,
+                5,
+                4,
+                4,
+                4,
+                4,
+                5,
+                4,
+                5
+              ],
+              "neuroticism": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ]
+            },
+            "trait_averages": {
+              "openness": 4.8,
+              "conscientiousness": 5.0,
+              "extraversion": 3.125,
+              "agreeableness": 4.333333333333333,
+              "neuroticism": 2.0
+            }
+          },
+          {
+            "iteration": 3,
+            "raw_scores": {
+              "openness": [
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                4
+              ],
+              "conscientiousness": [
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5
+              ],
+              "extraversion": [
+                3,
+                3,
+                3,
+                3,
+                3,
+                4,
+                3,
+                3
+              ],
+              "agreeableness": [
+                4,
+                5,
+                5,
+                4,
+                4,
+                4,
+                5,
+                5,
+                5
+              ],
+              "neuroticism": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ]
+            },
+            "trait_averages": {
+              "openness": 4.9,
+              "conscientiousness": 5.0,
+              "extraversion": 3.125,
+              "agreeableness": 4.555555555555555,
+              "neuroticism": 2.0
+            }
+          },
+          {
+            "iteration": 4,
+            "raw_scores": {
+              "openness": [
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                4,
+                5,
+                5,
+                4
+              ],
+              "conscientiousness": [
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                4
+              ],
+              "extraversion": [
+                3,
+                2,
+                3,
+                3,
+                2,
+                3,
+                3,
+                3
+              ],
+              "agreeableness": [
+                4,
+                5,
+                4,
+                4,
+                4,
+                4,
+                5,
+                4,
+                5
+              ],
+              "neuroticism": [
+                2,
+                2,
+                3,
+                2,
+                2,
+                2,
+                2,
+                2
+              ]
+            },
+            "trait_averages": {
+              "openness": 4.8,
+              "conscientiousness": 4.888888888888889,
+              "extraversion": 2.75,
+              "agreeableness": 4.333333333333333,
+              "neuroticism": 2.125
+            }
+          },
+          {
+            "iteration": 5,
+            "raw_scores": {
+              "openness": [
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                4,
+                5,
+                5,
+                4
+              ],
+              "conscientiousness": [
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                4
+              ],
+              "extraversion": [
+                3,
+                3,
+                3,
+                3,
+                3,
+                4,
+                3,
+                3
+              ],
+              "agreeableness": [
+                4,
+                5,
+                4,
+                4,
+                4,
+                4,
+                5,
+                4,
+                5
+              ],
+              "neuroticism": [
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2,
+                2
+              ]
+            },
+            "trait_averages": {
+              "openness": 4.8,
+              "conscientiousness": 4.888888888888889,
+              "extraversion": 3.125,
+              "agreeableness": 4.333333333333333,
+              "neuroticism": 2.0
+            }
+          }
+        ],
+        "final_averages": {
+          "openness": 4.82,
+          "conscientiousness": 4.933333333333334,
+          "extraversion": 2.975,
+          "agreeableness": 4.4222222222222225,
+          "neuroticism": 2.025
+        },
+        "total_iterations": 5
+      },
+      "score_differences": {
+        "trait_differences": {
+          "openness": {
+            "first_score": 4.6899999999999995,
+            "second_score": 4.82,
+            "difference": 0.13000000000000078,
+            "absolute_difference": 0.13000000000000078
+          },
+          "conscientiousness": {
+            "first_score": 4.688888888888888,
+            "second_score": 4.933333333333334,
+            "difference": 0.24444444444444535,
+            "absolute_difference": 0.24444444444444535
+          },
+          "extraversion": {
+            "first_score": 3.10625,
+            "second_score": 2.975,
+            "difference": -0.1312500000000001,
+            "absolute_difference": 0.1312500000000001
+          },
+          "agreeableness": {
+            "first_score": 4.272222222222222,
+            "second_score": 4.4222222222222225,
+            "difference": 0.15000000000000036,
+            "absolute_difference": 0.15000000000000036
+          },
+          "neuroticism": {
+            "first_score": 2.1125,
+            "second_score": 2.025,
+            "difference": -0.08749999999999991,
+            "absolute_difference": 0.08749999999999991
+          }
+        },
+        "mae": 0.1486388888888893,
+        "mse": 0.02480717978395077,
+        "rmse": 0.1575029516674236,
+        "correlation": 0.9982486836346006,
+        "max_abs_difference": 0.24444444444444535,
+        "min_abs_difference": 0.08749999999999991
+      }
+    }
+  ],
+  "aggregated_statistics": {
+    "mae_mean": 0.1486388888888893,
+    "mae_std": 0.0,
+    "mae_min": 0.1486388888888893,
+    "mae_max": 0.1486388888888893,
+    "correlation_mean": 0.9982486836346006,
+    "correlation_std": 0.0,
+    "correlation_min": 0.9982486836346006,
+    "correlation_max": 0.9982486836346006,
+    "rmse_mean": 0.1575029516674236,
+    "rmse_std": 0.0,
+    "trait_statistics": {
+      "openness": {
+        "mean_difference": 0.13000000000000078,
+        "std_difference": 0.0,
+        "mean_abs_difference": 0.13000000000000078,
+        "std_abs_difference": 0.0
+      },
+      "conscientiousness": {
+        "mean_difference": 0.24444444444444535,
+        "std_difference": 0.0,
+        "mean_abs_difference": 0.24444444444444535,
+        "std_abs_difference": 0.0
+      },
+      "extraversion": {
+        "mean_difference": -0.1312500000000001,
+        "std_difference": 0.0,
+        "mean_abs_difference": 0.1312500000000001,
+        "std_abs_difference": 0.0
+      },
+      "agreeableness": {
+        "mean_difference": 0.15000000000000036,
+        "std_difference": 0.0,
+        "mean_abs_difference": 0.15000000000000036,
+        "std_abs_difference": 0.0
+      },
+      "neuroticism": {
+        "mean_difference": -0.08749999999999991,
+        "std_difference": 0.0,
+        "mean_abs_difference": 0.08749999999999991,
+        "std_abs_difference": 0.0
+      }
+    }
+  },
+  "experiment_duration": "0:00:21.052919"
+}

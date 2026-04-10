@@ -1,0 +1,5 @@
+numpy>=1.24
+openai>=1.0
+scipy>=1.10
+# HuggingFace provider を使用する場合のみ必要
+# huggingface_hub>=0.20

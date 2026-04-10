@@ -1,0 +1,14 @@
+{
+    "description": "既存スコア使用のテスト用サンプルデータ",
+    "note": "このファイルは、既存スコア機能をテストするためのサンプルです",
+    
+    "bfi_scores": {
+        "final_averages": {
+            "openness": 3.5,
+            "conscientiousness": 4.2,
+            "extraversion": 2.8,
+            "agreeableness": 4.0,
+            "neuroticism": 3.1
+        }
+    }
+}
